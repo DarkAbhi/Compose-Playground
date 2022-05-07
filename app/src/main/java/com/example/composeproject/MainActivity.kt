@@ -3,6 +3,7 @@ package com.example.composeproject
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -33,6 +34,9 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ComposeProjectTheme {
-        Greeting("Android")
+        Column {
+            Greeting("Android")
+            Greeting("iOS")
+        }
     }
 }
